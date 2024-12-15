@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Consultation - Better Health</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .landing-page {
+            background-image: url('consultation.PNG');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 280px 20px;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .consultation-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .consultation-form label {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+        .consultation-form input, .consultation-form textarea, .consultation-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .consultation-form button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .consultation-form button:hover {
+            background: #0056b3;
+        }
+        .payment-section {
+            margin-top: 30px;
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer .footer-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Better Health</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Appointment.html">Appointment</a>
+            <a href="consultation.html">Consultation</a>
+            <a href="about.html">About Us</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Log In</a>
+        </nav>
+    </header>
+
+    <section class="landing-page">
+        <h1>Online Consultation</h1>
+        <p>Book a virtual consultation with top doctors using our secure Zoom platform.</p>
+    </section>
+
+    <section class="section">
+        <h2>Book Your Online Consultation</h2>
+        <form class="consultation-form" action="#" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="telephone">Telephone:</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Enter your phone number" required>
+
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">-- Choose a Doctor --</option>
+                <option value="Dr. Smith - Cardiologist">Dr. Smith - Cardiologist</option>
+                <option value="Dr. Brown - Pediatrician">Dr. Brown - Pediatrician</option>
+                <option value="Dr. Johnson - General Practitioner">Dr. Johnson - General Practitioner</option>
+                <option value="Dr. Thomas - Orthopedic Specialist">Dr. Thomas - Orthopedic Specialist</option>
+            </select>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="description">Brief Description of Consultation:</label>
+            <textarea id="description" name="description" rows="4" placeholder="Describe your issue" required></textarea>
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+
+        <div class="payment-section">
+            <h3>Make Payment</h3>
+            <p>Select your payment method to confirm the consultation.</p>
+            <form action="#" method="post">
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="">-- Choose Payment Method --</option>
+                    <option value="Orange Money">Orange Money</option>
+                    <option value="Afri Money">Afri Money</option>
+                </select>
+                <button type="submit">Pay Now</button>
+            </form>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <h3>Access Your Zoom Meeting</h3>
+            <p>After successful payment, you will receive an email with a Zoom link for your consultation.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>Contact Us</h3>
+                <p>1234 Dental St, Smile City, SC 12345</p>
+                <p>Email: contact@sierradentals.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <a href="home.html">Home</a><br>
+                <a href="appointment.html">Appointment</a><br>
+                <a href="consultation.html">Consultation</a><br>
+                <a href="about.html">About Us</a>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a><br>
+                <a href="#">Twitter</a><br>
+                <a href="#">Instagram</a><br>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <p>&copy; 2024 Better Health. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
