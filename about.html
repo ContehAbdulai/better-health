@@ -59,16 +59,93 @@
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
+        }<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Better Health</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .landing-page {
+            background-image: url('about.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 250px 20px;
+        }
+        .section {
+            padding: 50px 20px;
+        }
+        .our-story {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+        .our-story img {
+            width: 40%;
+            border-radius: 10px;
+        }
+        .our-story-text {
+            width: 40%;
+        }
+        .team {
+            text-align: center;
+            overflow: hidden; /* Ensures smooth scrolling within bounds */
+        }
+        
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        .team-container {
+            display: flex;
+            gap: 20px;
+            animation: marquee 15s linear infinite; /* Adjust speed with '15s' */
+        }
+        
+        .team-container:hover {
+            animation-play-state: paused; /* Pause animation on hover */
+        }
+        
         .team-member {
             width: 200px;
             text-align: center;
+            flex-shrink: 0; /* Prevent items from shrinking */
         }
         .team-member img {
-            width: 100%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
             border-radius: 50%;
             margin-bottom: 10px;
+            border: 2px solid #ddd;
         }
+        
         .contact-section {
             background: #f9f9f9;
             padding: 30px;
@@ -129,29 +206,29 @@
         <h2>Meet Our Team</h2>
         <div class="team-container">
             <div class="team-member">
-                <img src="Eboni Y Browne.png" alt="Team Member 1">
-                <h4>Eboni Y Browne </h4>
+                <img src="Eboni Y Browne.jpeg" alt="Team Member 1">
+                <h4>Eboni Y Browne</h4>
                 <p>Founder</p>
             </div>
             <div class="team-member">
-                <img src=" Memunatu Jalloh.png" alt="Team Member 2">
+                <img src="Memunatu Jalloh.jpeg" alt="Team Member 2">
                 <h4>Memunatu Jalloh</h4>
-             <p>CEO</p>
+                <p>CEO</p>
             </div>
             <div class="team-member">
-                <img src="Menumatu Kamara.png" alt="Team Member 3">
+                <img src="Menumatu Kamara.jpeg" alt="Team Member 3">
                 <h4>Memunatu B Kamara</h4>
-                <p>Maketing Manager</p>
+                <p>Marketing Manager</p>
             </div>
             <div class="team-member">
-                <img src="Binta.png" alt="Team Member 4">
-                <h4>Bintu S keita</h4>
+                <img src="Binta.jpeg" alt="Team Member 4">
+                <h4>Bintu S Keita</h4>
                 <p>Finance Manager</p>
             </div>
             <div class="team-member">
                 <img src="Suma.jpeg" alt="Team Member 5">
-                <h4> Ejatu Bella Suma</h4>
-                <p>Operations manager</p>
+                <h4>Ejatu Bella Suma</h4>
+                <p>Operations Manager</p>
             </div>
         </div>
     </section>
@@ -187,6 +264,49 @@
             </div>
         </div>
         <p>&copy; 2024 Better Health. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+        .team-member {
+            width: 200px;
+            text-align: center;
+        }
+        .team-member img {
+    width: 150px;       /* Set a fixed width */
+    height: 150px;      /* Set a fixed height */
+    object-fit: cover;  /* Ensures the image is cropped to fit the dimensions */
+    border-radius: 50%; /* Keeps the circular shape */
+    margin-bottom: 10px;
+    border: 2px solid #ddd; /* Optional: Add a subtle border */
+}
+
+        }
+        .contact-section {
+            background: #f9f9f9;
+            padding: 30px;
+            text-align: center;
+        }
+        footer {
+            background: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer .footer-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
     </footer>
 </body>
 </html>
